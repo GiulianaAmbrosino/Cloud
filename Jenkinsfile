@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout') {
+        stage('SubirRepo') {
             steps {
                 script {
                     git 'https://github.com/GiulianaAmbrosino/Cloud.git'
@@ -10,7 +10,7 @@ pipeline {
             }
         }
 
-        stage('Build') {
+        stage('InstalarNode') {
             steps {
                 script {
                     sh 'npm install'
@@ -18,7 +18,7 @@ pipeline {
             }
         }
 
-        stage('Deploy') {
+        stage('DeployearNode') {
             steps {
                 script {
                     sh 'npm start &'
