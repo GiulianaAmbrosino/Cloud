@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 script {
-                    git 'https://github.com/GiulianaAmbrosino/SimpleNodeApp.git'
+                    git 'https://github.com/GiulianaAmbrosino/Cloud.git'
                 }
             }
         }
